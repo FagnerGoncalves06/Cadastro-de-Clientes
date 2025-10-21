@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoSOLID.Domain\ProjetoSOLID.Domain.csproj" />
+    <ProjectReference Include="..\ProjetoSOLID.Infrastructure\ProjetoSOLID.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
