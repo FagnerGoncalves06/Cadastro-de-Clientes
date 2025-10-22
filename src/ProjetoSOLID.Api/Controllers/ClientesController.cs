@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProjetoSOLID.Application.Services;
+using ProjetoSOLID.Application.Utils;
 using ProjetoSOLID.Domain.DTOs;
 using ProjetoSOLID.Domain.Entities;
 using System;
@@ -18,7 +19,7 @@ namespace ProjetoSOLID.Api.Controllers
         public async Task<IActionResult> Post([FromBody] ClienteDto dto)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                return BadRequest(ModelState);                      
 
             var novoCliente = await _clienteService.CriarClienteAsync(dto);
 

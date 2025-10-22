@@ -60,7 +60,7 @@ namespace ProjetoSOLID.Infrastructure.Repositories
 
         public Cliente Map(ClienteDto dto)
         {
-            return new Cliente(dto.Nome, dto.Email, dto.FlAtivo);
+            return new Cliente(dto.Nome, dto.Email, dto.FlAtivo, dto.CPF);
         }
 
         public async Task UpdateAsync(Cliente cliente)
