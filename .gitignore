@@ -193,11 +193,11 @@ publish/
 PublishScripts/
 
 # Application configuration files (sensitive)
-appsettings.json
-appsettings.Development.json
-appsettings.Staging.json
-appsettings.Production.json
-appsettings.Local.json
+AppSettings.json
+AppSettings.Development.json
+AppSettings.Staging.json
+AppSettings.Production.json
+AppSettings.Local.json
 
 # NuGet Packages
 *.nupkg
